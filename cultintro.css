@@ -125,3 +125,32 @@ ul li {
     margin-bottom: 10px;
     border-radius: 5px; /* Slight rounding for a cleaner look */
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .left-content, .right-content {
+        width: 100%; /* Full width for better spacing */
+        text-align: center; /* Center text for readability */
+    }
+
+    ul {
+        padding-left: 0; /* Remove left padding for better alignment */
+    }
+
+    .pdf-viewer {
+        width: 100%; /* Full width iframe */
+        height: 400px; /* Adjust height for readability */
+    }
+}
+
+/* Ensure images and iframes scale properly */
+.centered-image,
+.pdf-viewer {
+    max-width: 100%;
+    height: auto;
+}
