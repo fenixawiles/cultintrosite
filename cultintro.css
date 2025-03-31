@@ -154,3 +154,29 @@ ul li {
     max-width: 100%;
     height: auto;
 }
+
+/* Existing mobile styles */
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column; /* Stack items on small screens */
+    }
+
+    .left-content, 
+    .right-content {
+        width: 100%; /* Make both sections take full width */
+        text-align: center; /* Ensure text remains readable */
+    }
+
+    .pdf-viewer {
+        width: 100%; /* Ensure PDF fits within the screen */
+        height: 300px; /* Adjust height to fit comfortably */
+    }
+}
+
+/* Ensure proper display on larger screens */
+@media (min-width: 769px) {
+    .pdf-viewer {
+        width: 90%; /* Maintain proper width without getting cut off */
+        height: 500px; /* Adjust height for desktop */
+    }
+}
